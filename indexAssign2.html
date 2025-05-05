@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="styleAssign2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+  <!-- Main Content -->
+  <nav>
+    <ul>
+      <li><a href="indexAssign2.html">Home</a></li>
+      <li><a href="stocksAssign2.html">Stocks</a></li>
+      <li><a href="dogsAssign2.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome!</h1>
+    <div id="quote-box">
+      <p id="quote">Loading quote…</p>
+      <p id="author"></p>
+    </div>
+    <div class="button-group">
+      <button class="btn" onclick="location.href='stocksAssign2.html'">Stocks</button>
+      <button class="btn" onclick="location.href='dogsAssign2.html'">Dogs</button>
+    </div>
+  </main>
+
+  <!-- Audio Instructions Div -->
+  <div class="audio-instructions">
+    <p>Say “Hello”, “Change the color to green”, or “Navigate to Stocks”.</p>
+    <button id="audio-on">Turn On Audio</button>
+    <button id="audio-off">Turn Off Audio</button>
+  </div>
+
+  <script src="javaAssign2.js"></script>
+</body>
+</html>

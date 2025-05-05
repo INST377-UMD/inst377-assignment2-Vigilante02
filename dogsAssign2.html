@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dogs</title>
+  <link rel="stylesheet" href="styleAssign2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="indexAssign2.html">Home</a></li>
+      <li><a href="stocksAssign2.html">Stocks</a></li>
+      <li><a href="dogsAssign2.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Random Dog Gallery</h1>
+    <div id="dog-carousel"
+      data-simple-slider
+      style="width:600px; height:400px; margin:1rem auto;">
+    </div>
+
+    <h2>Breeds</h2>
+    <div id="breed-buttons" class="button-group">
+    </div>
+
+    <div id="breed-info" class="breed-info">
+    </div>
+  </main>
+
+  <!-- Audio Instructions Div -->
+  <div class="audio-instructions">
+    <p>Say “Load dog breed husky”, or “Hello”, or “Change the color to yellow”.</p>
+    <button id="audio-on">Turn On Audio</button>
+    <button id="audio-off">Turn Off Audio</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+  <script src="javaAssign2.js" defer></script>
+</body>
+</html>
