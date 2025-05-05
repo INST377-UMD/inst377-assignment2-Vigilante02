@@ -100,17 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://tradestie.com/api/v1/apps/reddit?date=2022-04-03')
       .then(res => res.json())
       .then(data => {
-        // sort by number of comments descending
         const top5 = data
           .sort((a, b) => b.no_of_comments - a.no_of_comments)
           .slice(0, 5);
   
         const tbody = document.querySelector('#reddit-table tbody');
-        tbody.innerHTML = ''; // clear any old rows
+        tbody.innerHTML = ''; 
   
         top5.forEach(item => {
           const tr = document.createElement('tr');
-          // pick an icon for bullish/bearish
           const icon = item.sentiment === 'Bullish'
             ? '📈'
             : item.sentiment === 'Bearish'
